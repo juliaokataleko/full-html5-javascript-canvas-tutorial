@@ -5,14 +5,14 @@ canvas.height = 800
 
 let c = canvas.getContext('2d');
 
-c.fillStyle = 'rgba(255,0,0,0.4)'
-c.fillRect(100, 100, 100, 100);
+// c.fillStyle = 'rgba(255,0,0,0.4)'
+// c.fillRect(100, 100, 100, 100);
 
-c.fillStyle = 'rgba(0,0,255,0.5)'
-c.fillRect(400, 100, 100, 100);
+// c.fillStyle = 'rgba(0,0,255,0.5)'
+// c.fillRect(400, 100, 100, 100);
 
-c.fillStyle = 'rgba(0,255,0,0.5)'
-c.fillRect(300, 300, 200, 200);
+// c.fillStyle = 'rgba(0,255,0,0.5)'
+// c.fillRect(300, 300, 200, 200);
 
 // Line
 c.beginPath()
@@ -28,7 +28,7 @@ c.stroke()
 // c.strokeStyle = "#4834d4"
 // c.stroke()
 
-for (let index = 0; index < 1000; index++) {
+for (let index = 0; index < 10000; index++) {
     let x = Math.random() * canvas.width;
     let y = Math.random() * canvas.height;
 
@@ -37,3 +37,7 @@ for (let index = 0; index < 1000; index++) {
     c.strokeStyle = "#4834d4"
     c.stroke()
 }
+
+c.font = '100px arial';
+c.fillStyle = 'white'
+c.fillText("JFK", 300, 420);
